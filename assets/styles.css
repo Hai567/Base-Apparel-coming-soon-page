@@ -185,6 +185,9 @@ h1, span{
         right: -2px;
         top: -4.5px;
     }
+    .info-container__form__button:hover, .info-container__form__button:focus{
+        width: 133px;
+    }
     .warning{
         padding: 5% 0 0 0;
     }
