@@ -1,0 +1,194 @@
+/* Variables */
+:root{
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    
+}
+/* General CSSs */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans";
+    color: var(--desaturated-red);
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10%;
+}
+.icon{
+    grid-area: 1/1;
+    margin: 30% 67%;
+    z-index: 2;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.info-container{
+    grid-area: 1/1/span 1/5;
+    padding: 8% 20% 0 18%;
+    min-height: 20px;
+    max-height: 1000px;
+}
+h1, span{
+    text-transform: uppercase;
+}
+.info-container__heading{
+    padding: 30% 0 3% 0;
+}
+.none-display{
+    display: none !important;
+}
+.form-invalid{
+    border: 1.5px solid var(--soft-red) !important;
+}
+/*  */
+
+
+
+.img-container{
+    grid-area: 1/5/span 1/8;
+}
+.img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.info-container__heading__1{
+    font-weight: 300;
+    color: var(--desaturated-red);
+    letter-spacing: 1.1rem;
+    font-size: 4rem;
+}
+.info-container__heading__2{
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+    line-height: 116%;
+}
+.info-container__content{
+    padding-bottom: 2.2rem;
+}
+.info-container__content__p{
+    font-weight: 400;
+    color: var(--desaturated-red);
+    line-height: 200%;
+}
+.info-container__form__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1.5px solid var(--desaturated-red);
+    border-radius: 30px;
+    height: 3.5rem;
+    align-items: center;
+}
+.warning{
+    padding: 5% 0 0 2rem;
+}
+.info-container__form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info-container__form__input{
+    outline: none;
+    width: 80%;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 2rem;
+    color: var(--desaturated-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-container__form__input::placeholder{
+    color: var(--desaturated-red);
+}
+.info-container__form__button{
+    border: none;
+    height: 115%;
+    background: linear-gradient(135deg,#f1cccc,#ef9999);
+    background-repeat: no-repeat;
+    width: 30%;
+    border-radius: 61px;
+    box-shadow: -14px 14px 70px #d3a2a2, 14px -14px 70px #ffdcdc;
+    /* transition: 0.5s !important; */
+    position: relative;
+    right: -2px;
+    top: -4.5px;
+    transition: 0.8s !important;
+}
+.info-container__form__button img{
+    padding-left: 4px;
+}
+.info-container__form__button:hover, .info-container__form__button:focus{
+    cursor: pointer;
+    background: linear-gradient(18deg, hsl(0deg 80% 87%), hsl(0deg 74% 76%));
+    box-shadow: -12px 12px 55px #8b6b6b, 12px -12px 55px #ffffff;
+    z-index: 2;
+    height: 118%;
+    width: 32%;
+    top: -5.5px;
+    right: -4px;
+}
+/*  */
+@media all and (min-width: 1440px){
+    body{
+        width: 1440px;
+    }
+    .info-container{
+    padding: 8% 30% 0 18%;
+
+    }
+}
+/* Mobile < 900px */
+@media all and (max-width: 900px) {
+    body{
+        width: 100%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icon{
+        order: 1;
+        margin: 10% 20%;
+    }
+    .info-container{
+        text-align: center;
+        padding: 8% 20% 0 20%;
+    }
+    .info-container__heading{
+        padding-top: 12%;
+        padding-bottom: 7%;
+    }
+    .info-container__heading__1{
+        font-size: 2rem;
+        letter-spacing: 0.7rem;
+    }.info-container__form__button{
+        width: 120px;
+        position: relative;
+        right: -2px;
+        top: -4.5px;
+    }
+    .warning{
+        padding: 5% 0 0 0;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
