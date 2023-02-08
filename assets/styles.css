@@ -125,7 +125,7 @@ h1, span{
     background-repeat: no-repeat;
     width: 30%;
     border-radius: 61px;
-    box-shadow: -14px 14px 70px #d3a2a2, 14px -14px 70px #ffdcdc;
+    box-shadow: -8px 8px 16px #d3a2a2, 8px -8px 16px #ffdcdc;
     /* transition: 0.5s !important; */
     position: relative;
     right: -2px;
@@ -138,7 +138,7 @@ h1, span{
 .info-container__form__button:hover, .info-container__form__button:focus{
     cursor: pointer;
     background: linear-gradient(18deg, hsl(0deg 80% 87%), hsl(0deg 74% 76%));
-    box-shadow: -12px 12px 55px #8b6b6b, 12px -12px 55px #ffffff;
+    box-shadow: -9px 9px 18px #8b6b6b, 9px -9px 18px #ffffff;
     z-index: 2;
     height: 118%;
     width: 32%;
